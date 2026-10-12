@@ -1,0 +1,59 @@
+{
+  "toolbar": {
+    "title": "UrbanFit Sports Center Management Platform",
+    "logo-alt": "Logo de UrbanFit Sports Centers",
+    "language": "Seleccionar idioma",
+    "toggle-menu": "Mostrar u ocultar menú de navegación"
+  },
+  "menu": {
+    "home": "Inicio",
+    "new-reservation": "Nueva Reserva",
+    "navigation": "Navegación principal"
+  },
+  "home": {
+    "title": "Inicio",
+    "content": "Reservas inteligentes y gestión de capacidad para centros deportivos.",
+    "my-sports-centers": "Mis Centros Deportivos"
+  },
+  "sports-center": {
+    "empty": "Vacío",
+    "total-participants": "Total de Participantes",
+    "available-capacity": "Capacidad Disponible",
+    "participants": "participantes",
+    "loading": "Cargando centros deportivos...",
+    "load-error": "No se pudieron cargar los centros deportivos. Verifique el servidor."
+  },
+  "activity-type": {
+    "fitness": "Fitness",
+    "yoga": "Yoga",
+    "swimming": "Natación",
+    "cycling": "Ciclismo"
+  },
+  "reservation-form": {
+    "title": "Nueva Reserva",
+    "subtitle": "Registre participantes en su centro deportivo",
+    "activity-type": "Tipo de actividad",
+    "participant-name": "Nombre del participante",
+    "participants": "Asistentes",
+    "sports-center": "Centro deportivo",
+    "available-capacity": "Capacidad disponible",
+    "current-temperature": "Temperatura actual",
+    "loading-weather": "Obteniendo temperatura actual...",
+    "create": "Crear",
+    "cancel": "Cancelar",
+    "activity-type-required": "El tipo de actividad es obligatorio.",
+    "participant-name-required": "El nombre del participante es obligatorio y no puede contener solo espacios.",
+    "participants-required": "La cantidad de asistentes es obligatoria.",
+    "participants-min": "La cantidad de asistentes debe ser mayor que cero.",
+    "participants-max": "La cantidad de asistentes no puede superar la capacidad disponible.",
+    "weather-error": "No se pudo obtener la temperatura actual. No es posible crear la reserva.",
+    "capacity-error": "No hay capacidad disponible suficiente para esta reserva.",
+    "center-not-found": "No se encontró un centro deportivo para la actividad seleccionada.",
+    "save-error": "No se pudo guardar la reserva. Intente nuevamente."
+  },
+  "page-not-found": {
+    "title": "Página no encontrada",
+    "message": "La ruta {{path}} no fue encontrada.",
+    "go-home": "Ir a Inicio"
+  }
+}

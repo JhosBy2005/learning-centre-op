@@ -1,0 +1,6 @@
+<section class="not-found" aria-labelledby="not-found-title">
+  <mat-icon class="icon" aria-hidden="true">sports_score</mat-icon>
+  <h1 id="not-found-title" class="page-title">{{ 'page-not-found.title' | translate }}</h1>
+  <p role="alert">{{ 'page-not-found.message' | translate: {path: invalidPath} }}</p>
+  <button mat-flat-button (click)="navigateToHome()">{{ 'page-not-found.go-home' | translate }}</button>
+</section>

@@ -1,0 +1,48 @@
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  gap: 8px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.title {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.layout-container {
+  min-height: calc(100vh - 64px);
+}
+
+.sidenav {
+  width: 230px;
+}
+
+.active {
+  background: var(--mat-sys-secondary-container);
+}
+
+.page-content {
+  padding: 24px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 14px;
+  }
+
+  .page-content {
+    padding: 16px;
+  }
+}

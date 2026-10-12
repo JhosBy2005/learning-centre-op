@@ -1,0 +1,65 @@
+{
+  "sports-centers": [
+    {
+      "id": 1,
+      "name": "UrbanFit Miraflores",
+      "activityType": "fitness",
+      "capacity": 40,
+      "latitude": -12.1211,
+      "longitude": -77.0297
+    },
+    {
+      "id": 2,
+      "name": "UrbanFit San Isidro",
+      "activityType": "yoga",
+      "capacity": 25,
+      "latitude": -12.0975,
+      "longitude": -77.0365
+    },
+    {
+      "id": 3,
+      "name": "UrbanFit Surco",
+      "activityType": "swimming",
+      "capacity": 30,
+      "latitude": -12.146,
+      "longitude": -76.9918
+    },
+    {
+      "id": 4,
+      "name": "UrbanFit Barranco",
+      "activityType": "cycling",
+      "capacity": 20,
+      "latitude": -12.1464,
+      "longitude": -77.0208
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "sportsCenterId": 1,
+      "activityType": "fitness",
+      "participantName": "Carlos Ramirez",
+      "participants": 5,
+      "weatherTemperature": 19.4,
+      "reservedAt": "2026-10-10T09:15:00.000Z"
+    },
+    {
+      "id": 2,
+      "sportsCenterId": 1,
+      "activityType": "fitness",
+      "participantName": "Lucia Torres",
+      "participants": 3,
+      "weatherTemperature": 20.1,
+      "reservedAt": "2026-10-11T14:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "sportsCenterId": 2,
+      "activityType": "yoga",
+      "participantName": "Andrea Vargas",
+      "participants": 8,
+      "weatherTemperature": 18.7,
+      "reservedAt": "2026-10-11T07:45:00.000Z"
+    }
+  ]
+}

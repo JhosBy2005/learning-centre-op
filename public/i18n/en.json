@@ -1,0 +1,59 @@
+{
+  "toolbar": {
+    "title": "UrbanFit Sports Center Management Platform",
+    "logo-alt": "UrbanFit Sports Centers logo",
+    "language": "Select language",
+    "toggle-menu": "Toggle navigation menu"
+  },
+  "menu": {
+    "home": "Home",
+    "new-reservation": "New Reservation",
+    "navigation": "Main navigation"
+  },
+  "home": {
+    "title": "Home",
+    "content": "Smart Reservations and Capacity Management for Sports Centers.",
+    "my-sports-centers": "My Sports Centers"
+  },
+  "sports-center": {
+    "empty": "Empty",
+    "total-participants": "Total Participants",
+    "available-capacity": "Available Capacity",
+    "participants": "participants",
+    "loading": "Loading sports centers...",
+    "load-error": "Sports centers could not be loaded. Please check the server."
+  },
+  "activity-type": {
+    "fitness": "Fitness",
+    "yoga": "Yoga",
+    "swimming": "Swimming",
+    "cycling": "Cycling"
+  },
+  "reservation-form": {
+    "title": "New Reservation",
+    "subtitle": "Register Participants at Your Sports Center",
+    "activity-type": "Activity type",
+    "participant-name": "Participant name",
+    "participants": "Participants",
+    "sports-center": "Sports center",
+    "available-capacity": "Available capacity",
+    "current-temperature": "Current temperature",
+    "loading-weather": "Getting current temperature...",
+    "create": "Create",
+    "cancel": "Cancel",
+    "activity-type-required": "Activity type is required.",
+    "participant-name-required": "Participant name is required and cannot contain only spaces.",
+    "participants-required": "Participants is required.",
+    "participants-min": "Participants must be greater than zero.",
+    "participants-max": "Participants cannot exceed the available capacity.",
+    "weather-error": "The current temperature could not be obtained. The reservation cannot be created.",
+    "capacity-error": "There is not enough available capacity for this reservation.",
+    "center-not-found": "No sports center was found for the selected activity.",
+    "save-error": "The reservation could not be saved. Please try again."
+  },
+  "page-not-found": {
+    "title": "Page not found",
+    "message": "The path {{path}} was not found.",
+    "go-home": "Go to Home"
+  }
+}

@@ -1,0 +1,29 @@
+<mat-card class="summary-card" appearance="outlined" role="region" [attr.aria-label]="sportsCenter().name">
+  <mat-card-header>
+    <mat-icon mat-card-avatar class="avatar" aria-hidden="true">sports</mat-icon>
+    <mat-card-title>{{ sportsCenter().name }}</mat-card-title>
+    <mat-card-subtitle>{{ 'activity-type.' + sportsCenter().activityType | translate }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="summary-content">
+    @if (reservations().length === 0) {
+      <p class="empty">{{ 'sports-center.empty' | translate }}</p>
+    } @else {
+      <mat-list role="list">
+        @for (reservation of reservations(); track reservation.id) {
+          <mat-list-item role="listitem">
+            <mat-icon matListItemIcon aria-hidden="true">person</mat-icon>
+            <span matListItemTitle>{{ reservation.participantName }}</span>
+            <span matListItemLine>{{ reservation.participants }} {{ 'sports-center.participants' | translate }}</span>
+          </mat-list-item>
+        }
+      </mat-list>
+    }
+  </mat-card-content>
+
+  <mat-divider/>
+  <mat-card-footer class="summary-footer">
+    <span>{{ 'sports-center.total-participants' | translate }}: <strong>{{ totalParticipants() }}</strong></span>
+    <span>{{ 'sports-center.available-capacity' | translate }}: <strong>{{ availableCapacity() }}</strong></span>
+  </mat-card-footer>
+</mat-card>

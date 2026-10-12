@@ -1,0 +1,26 @@
+<section aria-labelledby="home-title">
+  <h1 id="home-title" class="page-title">{{ 'home.title' | translate }}</h1>
+  <p class="page-subtitle">{{ 'home.content' | translate }}</p>
+</section>
+
+<section aria-labelledby="sports-centers-title">
+  <h2 id="sports-centers-title">{{ 'home.my-sports-centers' | translate }}</h2>
+
+  @if (store.loading()) {
+    <div class="loading" role="status">
+      <mat-spinner diameter="32"/>
+      <span>{{ 'sports-center.loading' | translate }}</span>
+    </div>
+  }
+  @if (store.error()) {
+    <p class="error-message" role="alert">{{ 'sports-center.load-error' | translate }}</p>
+  }
+
+  <mat-grid-list [cols]="columns()" rowHeight="360px" gutterSize="16px">
+    @for (sportsCenter of store.sportsCenters(); track sportsCenter.id) {
+      <mat-grid-tile>
+        <app-sports-center-summary class="tile-content" [sportsCenter]="sportsCenter"/>
+      </mat-grid-tile>
+    }
+  </mat-grid-list>
+</section>
